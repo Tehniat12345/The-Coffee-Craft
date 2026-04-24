@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Craft - Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body, html { height: 100vh; overflow: hidden; font-family: 'Poppins', sans-serif; }
+
+        .hero-container {
+            height: 100vh;
+            /* Coffee theme colors: Deep Brown to Warm Mocha */
+            background: linear-gradient(135deg, #2C1B18 0%, #6F4E37 100%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 8%;
+            color: #F5F5DC; /* Creamy White */
+        }
+
+        .content-side { flex: 1; max-width: 550px; }
+        
+        /* Heading in 'Playfair Display' for that luxury feel */
+        h1 { 
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem; 
+            margin-bottom: 15px; 
+            line-height: 1.1; 
+            color: #D2B48C; /* Tan Color */
+        }
+
+        p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 25px; opacity: 0.8; }
+
+        .feature-list { margin-bottom: 35px; list-style: none; }
+        .feature-list li { margin-bottom: 10px; font-weight: 300; display: flex; align-items: center; }
+        .feature-list li::before { content: '☕'; margin-right: 10px; }
+
+        .cta-button {
+            padding: 18px 40px;
+            background: #D2B48C;
+            color: #2C1B18;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .cta-button:hover { background: #F5F5DC; }
+
+        .image-side { 
+            flex: 1; 
+            display: flex; 
+            justify-content: flex-end; 
+        }
+
+        /* Is box mein koi bhi coffee ki image bohot fit lagegi */
+        .coffee-mockup {
+            width: 450px;
+            height: 550px;
+            background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1887') no-repeat center center/cover;
+            border-radius: 30px;
+            border: 15px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-container">
+        <div class="content-side">
+            <h1>Brewing Excellence Every Morning</h1>
+            <p>Experience the rich, bold flavors of hand-picked Arabica beans, roasted to perfection by masters of the craft.</p>
+            
+            <ul class="feature-list">
+                <li>100% Organic & Sustainably Sourced</li>
+                <li>Artisanal Roasting Process</li>
+                <li>Global Shipping to Your Doorstep</li>
+            </ul>
+
+            <a href="#" class="cta-button">Order Your Blend</a>
+        </div>
+
+        <div class="image-side">
+            <div class="coffee-mockup">
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
